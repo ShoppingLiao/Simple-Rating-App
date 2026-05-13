@@ -8,7 +8,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "firebase": "^7.17.1",
+    "firebase": "^11.10.0",
     "query-string": "^6.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -77,6 +77,15 @@
     "browserify-sign": "^4.2.2",
     "@babel/traverse": "^7.23.2",
     "ansi-regex": "^5.0.1",
-    "minimatch": "^3.1.2"
+    "minimatch": "^3.1.2",
+    "@babel/helpers": "^7.26.10",
+    "@babel/runtime-corejs3": "^7.26.10",
+    "@babel/traverse": "^7.26.10",
+    "brace-expansion": "^1.1.12",
+    "debug": "^4.4.0",
+    "flatted": "^3.4.2",
+    "picomatch": "^2.3.2",
+    "es5-ext": "^0.10.63",
+    "@protobufjs/utf8": "^1.1.1"
   }
 }

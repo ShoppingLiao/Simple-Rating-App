@@ -1,12 +1,18 @@
-import firebase from 'firebase';
+import { initializeApp } from 'firebase/app';
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  serverTimestamp,
+} from 'firebase/firestore';
 import firebaseConfig from '../firebaseConfig';
 
-const app = firebase.initializeApp(firebaseConfig);
-const db = app.firestore();
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 export const addData = (data) => {
-  return db.collection('satisfaction_data').add({
-    created: firebase.firestore.FieldValue.serverTimestamp(),
+  return addDoc(collection(db, 'satisfaction_data'), {
+    created: serverTimestamp(),
     ...data,
   });
 };
